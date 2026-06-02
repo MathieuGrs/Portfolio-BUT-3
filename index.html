@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Portfolio · Mathieu Grosshans</title>
+<meta name="description" content="Portfolio de Mathieu Grosshans — une cérémonie en l'honneur d'un parcours, d'un projet et de compétences." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Marcellus&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#scene-1" data-scene-nav="1" aria-label="Accueil">
+    <span class="brand-mark">★</span>
+    <span class="brand-text">M<span class="brand-thin">athieu</span> G<span class="brand-thin">rosshans</span></span>
+  </a>
+  <nav class="topnav">
+    <a href="#scene-2" data-scene-nav="2">Le discours</a>
+    <a href="#scene-3" data-scene-nav="3">Les coulisses</a>
+    <a href="#scene-4" data-scene-nav="4">L'enveloppe</a>
+  </nav>
+</header>
+
+<div class="scroll-rail" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+<!-- LinkedIn badge — sits over the bottom-right corner watermark -->
+<a class="li-badge" href="https://www.linkedin.com/in/mathieu-grosshans-435804296" target="_blank" rel="noopener" aria-label="Profil LinkedIn de Mathieu Grosshans">
+  <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true">
+    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+  </svg>
+</a>
+
+<!-- ========== ONE CONTINUOUS FILM ========== -->
+<section class="film-wrap" id="film-wrap">
+  <div class="film" id="film">
+
+    <!-- LAYER 1 — Curtain / Hero -->
+    <div class="layer" data-layer="1">
+      <video class="scene-video" id="video1" muted playsinline preload="auto" poster="assets/poster1.jpg">
+        <source src="assets/scene1.mp4" type="video/mp4" />
+      </video>
+      <div class="scene-tint"></div>
+      <div class="hero-copy" data-reveal="hero">
+        <p class="eyebrow">Académie · Promotion 2026</p>
+        <h1 class="hero-title">Portfolio<br /><em>Mathieu&nbsp;Grosshans</em></h1>
+        <p class="hero-sub">Et le prix est décerné à… une carrière qui s'écrit en pleine lumière.</p>
+      </div>
+      <div class="scroll-hint" data-reveal="hint">
+        <span>Faites défiler pour lever le rideau</span>
+        <span class="chev">⌄</span>
+      </div>
+    </div>
+
+    <!-- LAYER 2 — Podium / Discours -->
+    <div class="layer" data-layer="2">
+      <video class="scene-video" id="video2" muted playsinline preload="auto" poster="assets/poster2.jpg">
+        <source src="assets/scene2.mp4" type="video/mp4" />
+      </video>
+      <div class="scene-tint"></div>
+      <div class="section-label" data-reveal="label-2"><span class="num">01</span><span class="lbl">Le discours</span></div>
+      <div class="bubble-field" data-reveal="bubbles-2">
+        <a class="lg-bubble bubble-left" href="pages/parcours.html">
+          <span class="lg-spec"></span>
+          <span class="lg-content">
+            <span class="lg-kicker">Acte I</span>
+            <span class="lg-title">Mon parcours</span>
+            <span class="lg-go">Découvrir <i>→</i></span>
+          </span>
+        </a>
+        <a class="lg-bubble bubble-right" href="pages/projet.html">
+          <span class="lg-spec"></span>
+          <span class="lg-content">
+            <span class="lg-kicker">Acte II</span>
+            <span class="lg-title">Mon projet professionnel</span>
+            <span class="lg-go">Découvrir <i>→</i></span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- LAYER 3 — Coulisses / Compétences -->
+    <div class="layer" data-layer="3">
+      <video class="scene-video" id="video3" muted playsinline preload="auto" poster="assets/poster3.jpg">
+        <source src="assets/scene3.mp4" type="video/mp4" />
+      </video>
+      <div class="scene-tint scene-tint--bottom"></div>
+      <div class="section-label" data-reveal="label-3"><span class="num">02</span><span class="lbl">Les coulisses · mes compétences</span></div>
+      <div class="statue-field" data-reveal="statues-3">
+        <a class="statue-btn" style="--x:27%"   href="pages/vente.html"><span class="statue-dot"></span><span class="statue-pill"><span>Vente</span></span></a>
+        <a class="statue-btn" style="--x:38.5%" href="pages/marketing.html"><span class="statue-dot"></span><span class="statue-pill"><span>Marketing</span></span></a>
+        <a class="statue-btn" style="--x:50%"   href="pages/business-developpement.html"><span class="statue-dot"></span><span class="statue-pill"><span>Business Développement</span></span></a>
+        <a class="statue-btn" style="--x:61.8%" href="pages/relation-client.html"><span class="statue-dot"></span><span class="statue-pill"><span>Relation client</span></span></a>
+        <a class="statue-btn" style="--x:73%"   href="pages/automatisation.html"><span class="statue-dot"></span><span class="statue-pill"><span>Automatisation</span></span></a>
+      </div>
+      <div class="statue-list" data-reveal="statues-3">
+        <a href="pages/vente.html">Vente</a>
+        <a href="pages/marketing.html">Marketing</a>
+        <a href="pages/business-developpement.html">Business Développement</a>
+        <a href="pages/relation-client.html">Management de la relation client</a>
+        <a href="pages/automatisation.html">Automatisation</a>
+      </div>
+    </div>
+
+    <!-- LAYER 4 — Enveloppe / SKEMA -->
+    <div class="layer" data-layer="4">
+      <video class="scene-video" id="video4" muted playsinline preload="auto" poster="assets/poster4.jpg">
+        <source src="assets/scene4.mp4" type="video/mp4" />
+      </video>
+      <div class="scene-tint"></div>
+      <div class="section-label" data-reveal="label-4"><span class="num">03</span><span class="lbl">Et le prix est décerné à…</span></div>
+      <div class="envelope-field" data-reveal="envelope-4">
+        <a class="lg-bubble bubble-center" href="https://www.skema.edu/en" target="_blank" rel="noopener">
+          <span class="lg-spec"></span>
+          <span class="lg-content">
+            <span class="lg-kicker">The winner is</span>
+            <span class="lg-title">SKEMA Business School</span>
+            <span class="lg-go">Ouvrir le site <i>↗</i></span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="curtain-call">
+  <div class="cc-inner">
+    <p class="cc-eyebrow">— Fin de la cérémonie —</p>
+    <h2 class="cc-title">Merci d'avoir assisté<br />à cette projection.</h2>
+    <a class="cc-top" href="#scene-1" data-scene-nav="1">Revoir depuis le début ↑</a>
+    <p class="cc-credit">Portfolio de Mathieu Grosshans · mis en scène comme une cérémonie des Oscars.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
